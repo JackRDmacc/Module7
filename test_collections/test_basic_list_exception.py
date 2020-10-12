@@ -24,6 +24,5 @@ class MyTestCase(unittest.TestCase):
             topic1.make_list()
 
 
-
 if __name__ == '__main__':
     unittest.main()

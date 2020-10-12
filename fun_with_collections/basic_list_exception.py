@@ -6,16 +6,23 @@ This program accepts input into a list and then returns the list
 def make_list():
     my_list = []
     for x in range(3):
-        my_list.insert(x, int(get_input()))
+        my_input = get_input()
+
+        if not my_input.isdigit():
+            raise ValueError
+        elif int(my_input) < 1:
+            raise ValueError
+        elif int(my_input) > 50:
+            raise ValueError
+        else:
+            my_list.insert(x, int(my_input))
+
     return my_list
 
 
 def get_input():
     x = input("Please enter a number:")
-    if not x.isdigit():
-        raise Exception("Non-numeric input")
-    else:
-        return x
+    return x
 
 
 if __name__ == '__main__':
