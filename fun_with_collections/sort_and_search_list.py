@@ -4,7 +4,10 @@ This program searches and sorts a list
 
 
 def sort_list():
-    pass
+    my_list = make_list()
+    my_list.sort()
+
+    return my_list
 
 
 def search_list(x):
