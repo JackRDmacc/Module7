@@ -13,6 +13,10 @@ class MyTestCase(unittest.TestCase):
     def test_item_not_found(self, input):
         self.assertEqual(topic1.search_array(15), -1)
 
+    @patch('fun_with_collections.sort_and_search_array.make_list', return_value=[45,31,5])
+    def test_sort_list(self, input):
+        self.assertEqual(topic1.sort_array(), [5,31,45])
+
 
 if __name__ == '__main__':
     unittest.main()
