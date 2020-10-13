@@ -1,5 +1,5 @@
 """Jack Reser
-This program accepts input into a list and then returns the list
+This program searches and sorts a list
 10/12/20"""
 
 
@@ -8,7 +8,11 @@ def sort_list():
 
 
 def search_list(x):
-    pass
+    my_list = make_list()
+    try:
+        return my_list.index(x)
+    except ValueError:
+        return -1
 
 
 def make_list():
