@@ -6,7 +6,11 @@ import array as arr
 
 
 def sort_array():
-    pass
+    my_list = make_list()
+    my_list.sort()
+    my_array = arr.array('i',my_list)
+
+    return my_list
 
 
 def search_array(x):
