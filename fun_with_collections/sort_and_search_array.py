@@ -10,7 +10,7 @@ def sort_array():
     my_list.sort()
     my_array = arr.array('i',my_list)
 
-    return my_list
+    return my_array
 
 
 def search_array(x):

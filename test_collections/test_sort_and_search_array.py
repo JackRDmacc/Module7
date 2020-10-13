@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
 
     @patch('fun_with_collections.sort_and_search_array.make_list', return_value=[45,31,5])
     def test_sort_list(self, input):
-        self.assertEqual(topic1.sort_array(), [5,31,45])
+        self.assertEqual(topic1.sort_array(), arr.array('i',[5,31,45]))
 
 
 if __name__ == '__main__':
