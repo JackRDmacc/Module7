@@ -10,7 +10,12 @@ def sort_array():
 
 
 def search_array(x):
-    pass
+    my_list = make_list()
+    my_array = arr.array('i',my_list)
+    try:
+        return my_array.index(x)
+    except ValueError:
+        return -1
 
 
 def make_list():
